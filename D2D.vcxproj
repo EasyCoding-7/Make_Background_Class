@@ -80,8 +80,11 @@
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeader>Use</PrecompiledHeader>
-      <AdditionalIncludeDirectories>./;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>./;./_Libraries</AdditionalIncludeDirectories>
     </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>./_Libraries</AdditionalLibraryDirectories>
+    </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -120,20 +123,32 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Device.cpp" />
-    <ClCompile Include="scen.cpp" />
+    <ClCompile Include="Draw\Rect.cpp" />
+    <ClCompile Include="Draw\Sprite.cpp" />
+    <ClCompile Include="Object\Background.cpp" />
+    <ClCompile Include="Render\Shader.cpp" />
+    <ClCompile Include="scene.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="System\Device.cpp" />
     <ClCompile Include="System\Keyboard.cpp" />
+    <ClCompile Include="System\Time.cpp" />
+    <ClCompile Include="Utility\String.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Device.h" />
+    <ClInclude Include="Draw\Rect.h" />
+    <ClInclude Include="Draw\Sprite.h" />
+    <ClInclude Include="Object\Background.h" />
+    <ClInclude Include="Render\Shader.h" />
     <ClInclude Include="stdafx.h" />
+    <ClInclude Include="System\Device.h" />
     <ClInclude Include="System\Keyboard.h" />
+    <ClInclude Include="System\Time.h" />
+    <ClInclude Include="Utility\String.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Effect.hlsl">
+    <None Include="_Shader2D\Effect.fx">
       <FileType>Document</FileType>
     </None>
   </ItemGroup>

@@ -1,26 +1,78 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="Device.cpp" />
-    <ClCompile Include="scen.cpp" />
     <ClCompile Include="stdafx.cpp" />
     <ClCompile Include="System\Keyboard.cpp">
       <Filter>System</Filter>
     </ClCompile>
+    <ClCompile Include="Utility\String.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Render\Shader.cpp">
+      <Filter>Render</Filter>
+    </ClCompile>
+    <ClCompile Include="Draw\Rect.cpp">
+      <Filter>Draw</Filter>
+    </ClCompile>
+    <ClCompile Include="System\Time.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="scene.cpp" />
+    <ClCompile Include="System\Device.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="Draw\Sprite.cpp">
+      <Filter>Draw</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Background.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Device.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="System\Keyboard.h">
       <Filter>System</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Effect.hlsl" />
+    <ClInclude Include="Utility\String.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Render\Shader.h">
+      <Filter>Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Draw\Rect.h">
+      <Filter>Draw</Filter>
+    </ClInclude>
+    <ClInclude Include="System\Time.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="System\Device.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="Draw\Sprite.h">
+      <Filter>Draw</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Background.h">
+      <Filter>Object</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="System">
       <UniqueIdentifier>{ddfd74f1-5938-4ade-b12a-102006c79d28}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Utility">
+      <UniqueIdentifier>{1d14a070-5340-4a01-a8a7-c0e248979d96}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Render">
+      <UniqueIdentifier>{b1320951-03f2-4a88-a538-333c09c50a25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Draw">
+      <UniqueIdentifier>{5dc862a7-134a-435c-9ab9-1a294abf47cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object">
+      <UniqueIdentifier>{b4d6df35-0ae4-4195-b1a0-bacbf1fe3059}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="_Shader2D\Effect.fx" />
   </ItemGroup>
 </Project>
